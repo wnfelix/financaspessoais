@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BaseDomain.cs" />
     <Compile Include="ClassificacaoExtra.cs" />
+    <Compile Include="DescricaoExtra.cs" />
     <Compile Include="Estabelecimento.cs" />
     <Compile Include="Dominio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

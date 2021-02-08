@@ -11,6 +11,7 @@ using System.Web.Http;
 
 namespace FinancasPessoais.WebAPI.Controllers
 {
+    [Authorize]
     public class TipoDominioController : ApiController
     {
         private IDominioRepository _dominioRepository;
@@ -27,7 +28,6 @@ namespace FinancasPessoais.WebAPI.Controllers
         }
 
         [HttpGet]
-        //[Route("?iddominio={:iddominio}"]
         public IHttpActionResult Listar(int idDominio)
         {
             return Ok(_dominioRepository.FindBy<TipoDominio>(x => x.Dominio.Id == idDominio)

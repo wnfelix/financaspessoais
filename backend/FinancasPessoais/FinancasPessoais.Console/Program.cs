@@ -51,7 +51,7 @@ namespace FinancasPessoais.Console
                 else if (!File.Exists(args[0]))
                     System.Console.WriteLine("O arquivo especificado não existe");
                 else
-                    repo.ExportExcel(args[0], @"c:\tmp\caixa.xlsx");
+                    repo.ExportExcel(args[0], @"c:\temp\caixa.xlsx");
             }
             catch (Exception e)
             {

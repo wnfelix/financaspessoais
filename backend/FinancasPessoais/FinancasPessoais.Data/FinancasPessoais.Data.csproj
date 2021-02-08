@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="DatabaseContext.cs" />
     <Compile Include="Maps\ClassificacaoExtraMap.cs" />
+    <Compile Include="Maps\DescricaoExtraMap.cs" />
     <Compile Include="Maps\DominioMap.cs" />
     <Compile Include="Maps\EstabelecimentoMap.cs" />
     <Compile Include="Maps\TipoDominioMap.cs" />
