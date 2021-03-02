@@ -11,7 +11,7 @@ using System.Web.Http;
 
 namespace FinancasPessoais.WebAPI.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class TipoDominioController : ApiController
     {
         private IDominioRepository _dominioRepository;

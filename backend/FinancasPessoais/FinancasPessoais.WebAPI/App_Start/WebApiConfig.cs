@@ -21,8 +21,8 @@ namespace FinancasPessoais.WebAPI
              * https://docs.microsoft.com/pt-br/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api
              */
             // Configure Web API to use only bearer token authentication.  
-            //config.SuppressDefaultHostAuthentication();
-            //config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
+            config.SuppressDefaultHostAuthentication();
+            config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 #if DEBUG
             // Web API configuration and services
             var cors = new EnableCorsAttribute("*", "*", "*");

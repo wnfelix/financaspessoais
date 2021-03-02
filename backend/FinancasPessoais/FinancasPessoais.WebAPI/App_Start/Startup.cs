@@ -9,7 +9,7 @@ using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-[assembly: OwinStartup(typeof(FinancasPessoais.WebAPI.Startup))]
+//[assembly: OwinStartup(typeof(FinancasPessoais.WebAPI.Startup))]
 namespace FinancasPessoais.WebAPI
 {
     public class Startup

@@ -12,6 +12,7 @@ using System.Web.Http;
 
 namespace FinancasPessoais.WebAPI.Controllers
 {
+    //[Authorize]
     public class DominioController : ApiController
     {
         private ITransformer<TipoDominio, TipoDominioModel> _tipoDominioTransformer;

@@ -1,0 +1,23 @@
+.application-content {
+    display: grid;
+    grid-template-columns: 3vw 97vw;
+    grid-template-rows: 58px auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.application-header {
+    height: 58px;
+    width: 97vw;
+}
+
+.application-body {
+    grid-column-start: 2;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.application-body form input, .application-body form .select-control, .application-body form button {
+    margin: 5px 5px;
+}

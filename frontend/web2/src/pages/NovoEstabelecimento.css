@@ -1,0 +1,11 @@
+.application-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+}
+
+form {
+    width: 25vw;
+}

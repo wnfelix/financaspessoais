@@ -57,8 +57,11 @@ namespace ExcelDocumentToolKit.CrossCutting.Infra.Parser
                         else
                             prop.SetValue(instance, TypeDescriptor.GetConverter(prop.PropertyType).ConvertFromInvariantString(excelCell[1]));
                     }
-                    else if (prop.PropertyType == typeof(Decimal))
-                        prop.SetValue(instance, TypeDescriptor.GetConverter(prop.PropertyType).ConvertFromInvariantString(excelCell[1]));
+                    else if (prop.PropertyType == typeof(decimal))
+                    {
+                        if (decimal.TryParse(excelCell[1], NumberStyles.Number, CultureInfo.InvariantCulture, out decimal decValue))
+                            prop.SetValue(instance, TypeDescriptor.GetConverter(prop.PropertyType).ConvertFromInvariantString(excelCell[1]));
+                    }
                     else if (!string.IsNullOrEmpty(excelCell[1]))
                         prop.SetValue(instance, TypeDescriptor.GetConverter(prop.PropertyType).ConvertFromString(excelCell[1]), System.Reflection.BindingFlags.Default, null, null, _culture);
                 }

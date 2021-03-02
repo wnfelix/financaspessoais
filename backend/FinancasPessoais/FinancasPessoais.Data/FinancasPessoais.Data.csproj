@@ -71,6 +71,7 @@
     <Compile Include="Maps\DominioMap.cs" />
     <Compile Include="Maps\EstabelecimentoMap.cs" />
     <Compile Include="Maps\TipoDominioMap.cs" />
+    <Compile Include="Maps\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Base\BaseRepository.cs" />
     <Compile Include="Repositories\Base\IRepository.cs" />
