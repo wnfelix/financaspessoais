@@ -11,7 +11,7 @@ using System.Web.Http;
 
 namespace FinancasPessoais.WebAPI.Controllers
 {
-    
+
     public class EstabelecimentoController : ApiController
     {
         private IDominioRepository _dominioRepository;
@@ -39,7 +39,7 @@ namespace FinancasPessoais.WebAPI.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult Cadastrar([FromBody]EstabelecimentoModel estabelecimento)
+        public IHttpActionResult Cadastrar([FromBody] EstabelecimentoModel estabelecimento)
         {
             _estabelecimentoCommandService.Salvar(_estabelecimentoTransformer.Reverse(estabelecimento));
 
@@ -47,7 +47,7 @@ namespace FinancasPessoais.WebAPI.Controllers
         }
 
         [HttpPut]
-        public IHttpActionResult Atualizar([FromBody]EstabelecimentoModel estabelecimento)
+        public IHttpActionResult Atualizar([FromBody] EstabelecimentoModel estabelecimento)
         {
             _estabelecimentoCommandService.Salvar(_estabelecimentoTransformer.Reverse(estabelecimento));
 
@@ -58,6 +58,14 @@ namespace FinancasPessoais.WebAPI.Controllers
         public IHttpActionResult Show(int id)
         {
             return Ok(_estabelecimentoTransformer.Transform(_dominioRepository.Get<Estabelecimento>(id)));
+        }
+
+        [HttpDelete]
+        public IHttpActionResult Apagar(int id)
+        {
+            _estabelecimentoCommandService.ApagarEstabelecimento(id);
+
+            return Ok();
         }
     }
 }

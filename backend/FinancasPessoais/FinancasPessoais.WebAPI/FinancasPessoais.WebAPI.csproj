@@ -181,6 +181,7 @@
     <Compile Include="App_Start\SimpleInjectorWebApiInitializer.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DescricaoExtraController.cs" />
     <Compile Include="Controllers\EstabelecimentoController.cs" />
     <Compile Include="Controllers\TipoDominioController.cs" />
     <Compile Include="Controllers\DominioController.cs" />
@@ -189,6 +190,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\OauthTokenProvider.cs" />
+    <Compile Include="Models\DescricaoExtraModel.cs" />
     <Compile Include="Models\EntidadeGenericaModel.cs" />
     <Compile Include="Models\EstabelecimentoModel.cs" />
     <Compile Include="Models\TipoDominioModel.cs" />

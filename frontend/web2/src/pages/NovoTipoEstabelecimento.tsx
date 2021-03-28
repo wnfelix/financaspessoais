@@ -63,7 +63,7 @@ export default function NovoTipoEstabelecimento() {
             <LeftSideToolBar />
             <div className="application-header">
                 <HeaderToolBar
-                    title={{ text: "Tipos de Estabelecimento", url: "/estabelecimentos" }}
+                    title={{ text: "Tipos de Estabelecimento", url: "/tiposestabelecimento" }}
                     links={[{ text: "Novo", url: "/novotipoestabelecimento" }]}
                 />
             </div>

@@ -47,5 +47,12 @@ namespace FinancasPessoais.Services
 
             return atual;
         }
+
+        public void ApagarEstabelecimento(int id)
+        {
+            var estab = _dominioRepository.Get<Estabelecimento>(id);
+            estab.Ativo = false;
+            _dominioRepository.Save(estab);
+        }
     }
 }

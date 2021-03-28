@@ -11,5 +11,6 @@ namespace FinancasPessoais.Services
     {
         Estabelecimento Salvar(Estabelecimento estabelecimento);
         TipoDominio Salvar(TipoDominio tipoDominio);
+        void ApagarEstabelecimento(int id);
     }
 }
